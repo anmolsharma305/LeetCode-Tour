@@ -1,6 +1,6 @@
 /*
 @ Author: Anmol Kumar Sharma
-
+Problem: 4Sum
 PROBLEM STATEMENT: 
 
 Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:
@@ -29,7 +29,6 @@ CONSTRAINTS:
 */
 
 /*
-Problem: 4 Sum
 Approach: Two Pointer Appraoch
 Time Complexity: O(N^3 log N) 
 */
