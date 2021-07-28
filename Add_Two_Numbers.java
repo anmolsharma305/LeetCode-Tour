@@ -2,6 +2,10 @@
 @Author : Anmol Kumar Sharma
 Problem: Add Two Numbers
 Problem Link: https://leetcode.com/problems/add-two-numbers/
+Difficulty: Medium
+
+Time Complexity: O(max(n1, n2)) , where n1 is the size of First LinkedList and n2 is the size of second LinkedList.
+Space Complexity: O(N)
 */
 
 class Solution {
