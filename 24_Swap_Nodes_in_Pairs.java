@@ -8,6 +8,7 @@ Time Complexity: O(N)
 Reference: https://java2blog.com/java-program-to-reverse-linked-list-in/
 */
 
+//Approach 1: 
 class Solution {
     public ListNode swapPairs(ListNode head) {
         if(head == null || head.next == null) return head;
@@ -32,5 +33,30 @@ class Solution {
             current = current.next;
         }
         return newHead;
+    }
+}
+
+//Aproach 2: 
+
+class Solution {    
+    public ListNode swapPairs(ListNode head) {
+        
+        ListNode dummy = new ListNode(-1);  //creating dummy node;
+        ListNode prev = dummy;
+        ListNode current = head;
+        dummy.next = head;
+        
+        
+        while(current != null && current.next != null){
+            prev.next = current.next;
+            current.next = current.next.next;
+            prev.next.next = current;
+            
+            current = current.next;
+            prev = prev.next.next;
+        }
+        
+        return dummy.next;
+        
     }
 }
